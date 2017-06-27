@@ -37,7 +37,7 @@
             android:textColor="@color/black" />
 
         <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
-            android:id="@+id/cyws_activity_ye3_yue_weiYangFangShi_wuRu"
+            android:id="@+id/cyws_activity_ye3_yue_weiYangFangShi_muRu"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             custom:CustomYouWuSelectContent="母乳"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
@@ -151,7 +151,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/et_activity_ye3_yue_huWaiHongDong"
+            android:id="@+id/et_activity_ye3_yue_huWaiHuoDong"
             android:gravity="center_vertical"
             android:textSize="13sp"
             android:layout_width="140dp"

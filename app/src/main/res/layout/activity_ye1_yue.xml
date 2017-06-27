@@ -268,11 +268,13 @@
             android:textColor="@color/black" />
 
         <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_chiNai_you"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             custom:CustomYouWuSelectContent="好"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
 
         <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_chiNai_wu"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             custom:CustomYouWuSelectContent="不好"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>

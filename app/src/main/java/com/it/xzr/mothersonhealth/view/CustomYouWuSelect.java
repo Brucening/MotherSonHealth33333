@@ -24,6 +24,7 @@ public class CustomYouWuSelect extends LinearLayout {
 
     private CheckBox checkBox;
     private boolean state = false;
+    private CustomYouWuSelect other, other1;
 
     public CustomYouWuSelect(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -50,6 +51,12 @@ public class CustomYouWuSelect extends LinearLayout {
                 if (!state) {
                     checkBox.setChecked(true);
                     state = true;
+                    other.getCheckBox().setChecked(false);
+                    other.setState(false);
+                    if (other1 != null) {
+                        other1.getCheckBox().setChecked(false);
+                        other1.setState(false);
+                    }
                 } else if (state) {
                     checkBox.setChecked(false);
                     state = false;
@@ -59,11 +66,21 @@ public class CustomYouWuSelect extends LinearLayout {
         });
     }
 
-    public boolean isState() {
+    public boolean getState() {
         return state;
     }
 
     public void setState(boolean state) {
         this.state = state;
+    }
+
+    public CheckBox getCheckBox() {
+        return checkBox;
+    }
+
+
+    public void setOther(CustomYouWuSelect other, CustomYouWuSelect other1) {
+        this.other = other;
+        this.other1 = other1;
     }
 }

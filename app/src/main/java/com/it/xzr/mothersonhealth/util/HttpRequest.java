@@ -32,7 +32,11 @@ public class HttpRequest {
                 .build();
 
         Response response = client.newCall(request).execute();
-        return response.body().string();
+        if (response.isSuccessful()) {
+            return response.body().string();
+        } else {
+           return null;
+        }
     }
 
     public String postRequest(String url, String json) throws IOException {
@@ -42,7 +46,11 @@ public class HttpRequest {
                 .post(body)
                 .build();
         Response response = client.newCall(request).execute();
-        return response.body().string();
+        if (response.isSuccessful()) {
+            return response.body().string();
+        } else {
+            return null;
+        }
     }
 
 }

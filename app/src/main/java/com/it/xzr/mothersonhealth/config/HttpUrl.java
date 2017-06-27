@@ -5,4 +5,11 @@ package com.it.xzr.mothersonhealth.config;
  */
 
 public interface HttpUrl {
+    public  final String BASE_ADDRESS="";
+
+    /**
+     * 登录
+     */
+    public final String LOGIN=BASE_ADDRESS+"";
+
 }
