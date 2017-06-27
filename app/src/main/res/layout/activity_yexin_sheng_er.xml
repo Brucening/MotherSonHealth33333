@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_background"
+    tools:context="com.it.xzr.mothersonhealth.activity.ertong.YEXinShengErActivity">
+
+    <com.it.xzr.mothersonhealth.view.CustomActionBar
+        android:id="@+id/cab_activity_yexin_sheng_er_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ActionBarBackground="@color/activity_main_erTong_background"
+        custom:ActionBarContent="@string/fragment_record_list_yuEr_xinShengEr"></com.it.xzr.mothersonhealth.view.CustomActionBar>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp"
+        android:layout_below="@+id/cab_activity_yexin_sheng_er_back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_yexin_sheng_er_table_title"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="日龄"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="喂养\n方式"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="吃奶\n次数"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="小便\n次数"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="大便\n次数"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="体重\n（克）"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="皮肤黄染"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="1天"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_activity_yexin_sheng_er_1_weiYangFangShi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="喂养\n方式"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_1_chiNaiCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_1_xiaoBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_1_daBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_1_tiZhong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        android:id="@+id/cyws_activity_yexin_sheng_er_1_huangRan_you"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        custom:CustomYouWuSelectCheckState="true"
+                        android:id="@+id/cyws_activity_yexin_sheng_er_1_huangRan_wu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_yexin_sheng_er_table_content_bg2"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="2天"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_activity_yexin_sheng_er_2_weiYangFangShi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_2_chiNaiCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_2_xiaoBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_2_daBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_2_tiZhong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        android:id="@+id/cyws_activity_yexin_sheng_er_2_huangRan_you"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        custom:CustomYouWuSelectCheckState="true"
+                        android:id="@+id/cyws_activity_yexin_sheng_er_2_huangRan_wu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_yexin_sheng_er_table_content_bg3"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="3天"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_activity_yexin_sheng_er_3_weiYangFangShi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_3_chiNaiCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_3_xiaoBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_3_daBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_3_tiZhong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        android:id="@+id/cyws_activity_yexin_sheng_er_3_huangRan_you"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        custom:CustomYouWuSelectCheckState="true"
+                        android:id="@+id/cyws_activity_yexin_sheng_er_3_huangRan_wu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="4天"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_activity_yexin_sheng_er_4_weiYangFangShi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="喂养\n方式"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_4_chiNaiCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_4_xiaoBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_4_daBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_4_tiZhong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        android:id="@+id/cyws_activity_yexin_sheng_er_4_huangRan_you"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        custom:CustomYouWuSelectCheckState="true"
+                        android:id="@+id/cyws_activity_yexin_sheng_er_4_huangRan_wu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_yexin_sheng_er_table_content_bg2"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="5天"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_activity_yexin_sheng_er_5_weiYangFangShi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="喂养\n方式"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_5_chiNaiCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_5_xiaoBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_5_daBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_5_tiZhong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        android:id="@+id/cyws_activity_yexin_sheng_er_5_huangRan_you"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        custom:CustomYouWuSelectCheckState="true"
+                        android:id="@+id/cyws_activity_yexin_sheng_er_5_huangRan_wu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_yexin_sheng_er_table_content_bg3"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="6天"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_activity_yexin_sheng_er_6_weiYangFangShi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="喂养\n方式"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_6_chiNaiCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_6_xiaoBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_6_daBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_6_tiZhong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        android:id="@+id/cyws_activity_yexin_sheng_er_6_huangRan_you"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        custom:CustomYouWuSelectCheckState="true"
+                        android:id="@+id/cyws_activity_yexin_sheng_er_6_huangRan_wu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="7天"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_activity_yexin_sheng_er_7_weiYangFangShi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="喂养\n方式"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_7_chiNaiCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_7_xiaoBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_7_daBianCiShu"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/et_activity_yexin_sheng_er_7_tiZhong"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        android:id="@+id/cyws_activity_yexin_sheng_er_7_huangRan_you"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+                    <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                        custom:CustomYouWuSelectCheckState="true"
+                        android:id="@+id/cyws_activity_yexin_sheng_er_7_huangRan_wu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝宝第一针乙肝疫苗接种时间："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_activity_yexin_sheng_er_firstYiGan_nian"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_activity_yexin_sheng_er_firstYiGan_yue"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_activity_yexin_sheng_er_firstYiGan_ri"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝宝卡介苗接种时间："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_activity_yexin_sheng_er_firstKaJie_nian"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_activity_yexin_sheng_er_firstKaJie_yue"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_activity_yexin_sheng_er_firstKaJie_ri"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="新生儿疾病筛查："
+                android:textColor="@color/black" />
+
+            <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                android:id="@+id/cyws_activity_yexin_sheng_er_jiBingShaiCha_you"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+            <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                android:id="@+id/cyws_activity_yexin_sheng_er_jiBingShaiCha_wu"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="新生儿听力筛查："
+                android:textColor="@color/black" />
+
+            <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                android:id="@+id/cyws_activity_yexin_sheng_er_tingLiShaiCha_you"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+            <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+                android:id="@+id/cyws_activity_yexin_sheng_er_tingLiShaiCha_wu"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_activity_yexin_sheng_er_save"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ye_jk_save_btn_bg"
+        android:text="@string/activity_ye_jk_save"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

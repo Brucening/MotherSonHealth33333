@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.it.xzr.mothersonhealth.activity.ErTongActivity">
+
+    <com.it.xzr.mothersonhealth.view.CustomActionBar
+        android:id="@+id/cab_activity_er_tong_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ActionBarBackground="@color/activity_main_erTong_background"
+        custom:ActionBarContent="@string/activity_main_erTong_content"></com.it.xzr.mothersonhealth.view.CustomActionBar>
+
+    <FrameLayout
+        android:id="@+id/fl_activity_er_tong_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cab_activity_er_tong_back"></FrameLayout>
+</RelativeLayout>

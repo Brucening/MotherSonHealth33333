@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.it.xzr.mothersonhealth.view.CustomActionBar
+        android:id="@+id/cab_activity_jie_zhong_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ActionBarBackground="@color/activity_main_jieZhong_background"
+        custom:ActionBarContent="@string/activity_main_jieZhong_content"></com.it.xzr.mothersonhealth.view.CustomActionBar>
+
+</RelativeLayout>

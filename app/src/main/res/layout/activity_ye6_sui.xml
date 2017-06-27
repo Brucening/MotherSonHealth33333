@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_background"
+    android:orientation="vertical">
+
+    <com.it.xzr.mothersonhealth.view.CustomActionBar
+        android:id="@+id/cab_activity_ye6_sui_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ActionBarBackground="@color/activity_main_erTong_background"
+        custom:ActionBarContent="@string/fragment_record_list_yuEr_6sui"></com.it.xzr.mothersonhealth.view.CustomActionBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="于"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye6_sui_time_year"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye6_sui_time_yue"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye6_sui_time_ri"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日 满6岁"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="会帮忙做简单的家务吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_jiaWu_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="会"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_jiaWu_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="否"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="好吃的事物能分享给长辈吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_fenXiangZhangBei_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="能"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_fenXiangZhangBei_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="否"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="做游戏时能遵守规则或约定吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_zunShouGuiZe_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="能"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_zunShouGuiZe_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="否"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="能写自己的名字吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_xieZiJiMingZi_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="能"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_xieZiJiMingZi_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="否"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_jkxin_sheng_er_table_content_bg2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:text="会表达自己的感受或想法吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_biaoDaGanShou_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="能"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_biaoDaGanShou_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="否"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_jkxin_sheng_er_table_content_bg2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="会玩角色扮演的集体游戏吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_jiaoSeBanYan_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="是"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_jiaoSeBanYan_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="否"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_jkxin_sheng_er_table_content_bg2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="会画方形吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_huaFangXing_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="会"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_huaFangXing_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="否"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_jkxin_sheng_er_table_content_bg2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="会奔跑吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_benPao_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="会"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye6_sui_benPao_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="否"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="注：出现灰色的情况请尽早就诊。"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_activity_ye6_sui_save"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ye_jk_save_btn_bg"
+        android:text="@string/activity_ye_jk_save"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

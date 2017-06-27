@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">母子健康手册</string>
+
+    <!--主界面-->
+    <string name="activity_main_actionbar_content">母子健康手册</string>
+    <string name="activity_main_yunQian_content">孕前篇</string>
+    <string name="activity_main_yunChan_content">孕产篇</string>
+    <string name="activity_main_erTong_content">儿童篇</string>
+    <string name="activity_main_jieZhong_content">接种篇</string>
+
+    <!--儿童篇-->
+    <string name="fragment_record_list_yuEr_xinShengEr">新生儿早期育儿记录</string>
+    <string name="fragment_record_list_yuEr_1yue">1月育儿记录</string>
+    <string name="fragment_record_list_yuEr_3yue">3月育儿记录</string>
+    <string name="fragment_record_list_yuEr_6yue">6月育儿记录</string>
+    <string name="fragment_record_list_yuEr_8yue">8月育儿记录</string>
+    <string name="fragment_record_list_yuEr_1sui">1岁育儿记录</string>
+    <string name="fragment_record_list_yuEr_1sui6yue">1岁6个月育儿记录</string>
+    <string name="fragment_record_list_yuEr_2sui">2岁育儿记录</string>
+    <string name="fragment_record_list_yuEr_2sui6yue">2岁6个月育儿记录</string>
+    <string name="fragment_record_list_yuEr_3sui">3岁育儿记录</string>
+    <string name="fragment_record_list_yuEr_4sui">4岁育儿记录</string>
+    <string name="fragment_record_list_yuEr_5sui">5岁育儿记录</string>
+    <string name="fragment_record_list_yuEr_6sui">6岁育儿记录</string>
+
+    <string name="fragment_record_list_jianKang_xinShengEr">新生儿早期健康检查记录</string>
+    <string name="fragment_record_list_jianKang_1yue">1月健康检查记录</string>
+    <string name="fragment_record_list_jianKang_3yue">3月健康检查记录</string>
+    <string name="fragment_record_list_jianKang_6yue">6月健康检查记录</string>
+    <string name="fragment_record_list_jianKang_8yue">8月健康检查记录</string>
+    <string name="fragment_record_list_jianKang_1sui">1岁健康检查记录</string>
+    <string name="fragment_record_list_jianKang_1sui6yue">1岁6个月健康检查记录</string>
+    <string name="fragment_record_list_jianKang_2sui">2岁健康检查记录</string>
+    <string name="fragment_record_list_jianKang_2sui6yue">2岁6个月健康检查记录</string>
+    <string name="fragment_record_list_jianKang_3sui">3岁健康检查记录</string>
+    <string name="fragment_record_list_jianKang_4sui">4岁健康检查记录</string>
+    <string name="fragment_record_list_jianKang_5sui">5岁健康检查记录</string>
+    <string name="fragment_record_list_jianKang_6sui">6岁健康检查记录</string>
+
+    <string name="activity_ye_jk_save">保\t\t\t\t\t\t存</string>
+
+</resources>

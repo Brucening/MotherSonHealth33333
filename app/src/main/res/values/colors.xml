@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--字体-->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <!--主界面-->
+    <color name="activity_main_background">#10000000</color>
+    <color name="activity_main_actionbar_background">#FF4081</color>
+    <color name="activity_main_yunQian_background">#715FD6</color>
+    <color name="activity_main_yunChan_background">#F29DD1</color>
+    <color name="activity_main_erTong_background">#79B4F2</color>
+    <color name="activity_main_jieZhong_background">#589808</color>
+
+    <!--儿童篇-->
+    <color name="activity_yexin_sheng_er_table_title">#cc79B4F2</color>
+    <color name="activity_yexin_sheng_er_table_content_bg2">#5579B4F2</color>
+    <color name="activity_yexin_sheng_er_table_content_bg3">#99E5DBAD</color>
+    <color name="activity_jkxin_sheng_er_table_content_bg2">#4479B4F2</color>
+    <color name="activity_ye_title_bg">#bb79B4F2</color>
+</resources>

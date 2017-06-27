@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_background"
+    android:orientation="vertical">
+
+    <com.it.xzr.mothersonhealth.view.CustomActionBar
+        android:id="@+id/cab_activity_ye8_yue_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ActionBarBackground="@color/activity_main_erTong_background"
+        custom:ActionBarContent="@string/fragment_record_list_yuEr_8yue"></com.it.xzr.mothersonhealth.view.CustomActionBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/activity_ye_title_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="给宝宝添加肉类的时间："
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye8_yue_addMeat"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="给宝宝添加蛋类的时间："
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye8_yue_addEgg"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝宝出第一颗牙的时间："
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye8_yue_firstTeeth"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="是否与宝宝玩“躲猫猫”游戏？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_duoMaoMao_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/et_activity_ye8_yue_duoMaoMao_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_jkxin_sheng_er_table_content_bg2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:text="听到声音有应答吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_responseToSound_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_responseToSound_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_jkxin_sheng_er_table_content_bg2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="会区分生人和熟人吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_quFenShengShuRen_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_quFenShengShuRen_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_jkxin_sheng_er_table_content_bg2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="双手间会传递玩具吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_chuanDiWanJu_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_chuanDiWanJu_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_jkxin_sheng_er_table_content_bg2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="会独坐吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_duZuo_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye8_yue_duZuo_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="注：出现灰色的情况请尽早就诊。"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_activity_ye8_yue_save"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ye_jk_save_btn_bg"
+        android:text="@string/activity_ye_jk_save"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

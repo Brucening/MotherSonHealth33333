@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_background"
+    android:orientation="vertical"
+    tools:context="com.it.xzr.mothersonhealth.activity.ertong.YE1YueActivity">
+
+    <com.it.xzr.mothersonhealth.view.CustomActionBar
+        android:id="@+id/cab_activity_ye1_yue_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:ActionBarBackground="@color/activity_main_erTong_background"
+        custom:ActionBarContent="@string/fragment_record_list_yuEr_1yue"></com.it.xzr.mothersonhealth.view.CustomActionBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="于"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye1_yue_time_nian"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye1_yue_time_yue"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye1_yue_time_ri"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日 满月"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="脐带脱落的时间："
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye1_yue_qiDai"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/board_ertong_content"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="皮肤黄染消退的时间:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye1_yue_huangRanXiaoTui"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/board_ertong_content"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每天吃奶次数："
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye1_yue_chiNai"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/board_ertong_content"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="小便次数："
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye1_yue_xiaoBian"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/board_ertong_content"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="162dp"
+            android:text="大便次数："
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_activity_ye1_yue_daBian"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/board_ertong_content"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="喂养方式："
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_weiYangFangShi_muRu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="母乳"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_weiYangFangShi_hunHe"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="混合"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_weiYangFangShi_renGong"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="人工"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="吃奶情况怎么样？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="好"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="不好"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:text="听到较大声响时，有无因受惊\n伸动手脚或开始哭泣？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_kuQi_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_kuQi_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="经常哭闹不易安慰吗？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_kuNao_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_kuNao_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="补维生素D或AD？"
+            android:textColor="@color/black" />
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_weiShengSu_you"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="有"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+
+        <com.it.xzr.mothersonhealth.view.CustomYouWuSelect
+            android:id="@+id/cyws_activity_ye1_yue_weiShengSu_wu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            custom:CustomYouWuSelectContent="无"></com.it.xzr.mothersonhealth.view.CustomYouWuSelect>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_activity_ye1_yue_save"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/ye_jk_save_btn_bg"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/activity_ye_jk_save"
+        android:layout_width="match_parent"
+        android:layout_height="33dp" />
+
+
+
+</LinearLayout>

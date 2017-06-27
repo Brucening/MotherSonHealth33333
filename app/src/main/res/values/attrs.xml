@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomActionBar">
+        <attr name="ActionBarBackground" format="reference|color"></attr>
+        <attr name="ActionBarContent" format="reference|string"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomYouWuSelect">
+        <attr name="CustomYouWuSelectContent" format="string"></attr>
+        <attr name="CustomYouWuSelectCheckState" format="string"></attr>
+    </declare-styleable>
+</resources>

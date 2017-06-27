@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_background"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_main_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_main_actionbar_background"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/activity_main_actionbar_content"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/rl_activity_main_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_activity_main_kind"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_main_kind"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="35dp"
+        android:paddingBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_activity_main_yunQian"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="45dp"
+            android:background="@color/activity_main_yunQian_background"
+            android:gravity="center"
+            android:text="@string/activity_main_yunQian_content"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_main_yunChan"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignBottom="@+id/tv_activity_main_yunQian"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:background="@color/activity_main_yunChan_background"
+            android:gravity="center"
+            android:text="@string/activity_main_yunChan_content"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_main_erTong"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/tv_activity_main_yunQian"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/activity_main_erTong_background"
+            android:gravity="center"
+            android:text="@string/activity_main_erTong_content"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_main_jieZhong"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignBottom="@+id/tv_activity_main_erTong"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:background="@color/activity_main_jieZhong_background"
+            android:gravity="center"
+            android:text="@string/activity_main_jieZhong_content"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
