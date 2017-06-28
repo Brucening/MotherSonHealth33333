@@ -9,6 +9,7 @@ import com.it.xzr.mothersonhealth.view.CustomActionBar;
 
 public class YE4SuiActivity extends BaseActivity {
     private CustomActionBar customActionBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

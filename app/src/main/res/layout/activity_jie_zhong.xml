@@ -8,7 +8,7 @@
         android:id="@+id/cab_activity_jie_zhong_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        custom:ActionBarBackground="@color/activity_main_jieZhong_background"
+        custom:ActionBarBackground="@color/activity_main_actionbar_background"
         custom:ActionBarContent="@string/activity_main_jieZhong_content"></com.it.xzr.mothersonhealth.view.CustomActionBar>
 
 </RelativeLayout>

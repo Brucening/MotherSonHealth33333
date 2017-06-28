@@ -1,6 +1,7 @@
 package com.it.xzr.mothersonhealth.activity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
@@ -19,7 +20,6 @@ import java.util.List;
 
 
 public class MainActivity extends BaseActivity {
-    private TextView yunQianTV, yunChanTV, erTongTV, jieZhongTV;
     private RecyclerView recyclerView;
 
     @Override
@@ -32,51 +32,43 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initWidget() {
-//        yunQianTV = (TextView) findViewById(R.id.tv_activity_main_yunQian);
-//        yunChanTV = (TextView) findViewById(R.id.tv_activity_main_yunChan);
-//        erTongTV = (TextView) findViewById(R.id.tv_activity_main_erTong);
-//        jieZhongTV = (TextView) findViewById(R.id.tv_activity_main_jieZhong);
-//        yunQianTV.setOnClickListener(this);
-//        yunChanTV.setOnClickListener(this);
-//        erTongTV.setOnClickListener(this);
-//        jieZhongTV.setOnClickListener(this);
 
-        recyclerView= (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
     }
 
     @Override
     public void initData() {
-        RecyclerView.LayoutManager manager=new GridLayoutManager(this,2);
+        RecyclerView.LayoutManager manager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(manager);
-        List<GongNengMoKuaiItem> data=new ArrayList<>();
-        data.add(new GongNengMoKuaiItem("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3795770905,4042765228&fm=26&gp=0.jpg","孕前篇"));
-        data.add(new GongNengMoKuaiItem("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=847148555,2831273504&fm=26&gp=0.jpg","孕产篇"));
-        data.add(new GongNengMoKuaiItem("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=108724125,966706653&fm=26&gp=0.jpg","儿童篇"));
-        data.add(new GongNengMoKuaiItem("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=928861582,28679776&fm=26&gp=0.jpg","接种篇"));
-        GongNengMoKuaiRVAdapter adapter=new GongNengMoKuaiRVAdapter(this,data);
+        List<GongNengMoKuaiItem> data = new ArrayList<>();
+        data.add(new GongNengMoKuaiItem("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3795770905,4042765228&fm=26&gp=0.jpg", "孕前篇"));
+        data.add(new GongNengMoKuaiItem("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=847148555,2831273504&fm=26&gp=0.jpg", "孕产篇"));
+        data.add(new GongNengMoKuaiItem("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=108724125,966706653&fm=26&gp=0.jpg", "儿童篇"));
+        data.add(new GongNengMoKuaiItem("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=928861582,28679776&fm=26&gp=0.jpg", "接种篇"));
+        GongNengMoKuaiRVAdapter adapter = new GongNengMoKuaiRVAdapter(this, data);
         recyclerView.setAdapter(adapter);
-        recyclerView.addItemDecoration(new GridViewDividerItemDecoration(this,R.drawable.activity_main_rv_divider_bg));
+        recyclerView.addItemDecoration(new GridViewDividerItemDecoration(this));
+        adapter.setOnClickListner(new GongNengMoKuaiRVAdapter.OnClickListner() {
+            @Override
+            public void onItemClickListner(String name) {
+                switch (name) {
+                    case "孕前篇":
+                        startActivity(new Intent(MainActivity.this, YunQianActivity.class));
+                        break;
+                    case "孕产篇":
+                        startActivity(new Intent(MainActivity.this, YunChanActivity.class));
+                        break;
+                    case "儿童篇":
+                        startActivity(new Intent(MainActivity.this, ErTongActivity.class));
+                        break;
+                    case "接种篇":
+                        startActivity(new Intent(MainActivity.this, JieZhongActivity.class));
+                        break;
+                }
+            }
+        });
     }
 
-//    @Override
-//    public void onClick(View v) {
-//        super.onClick(v);
-//        switch (v.getId()) {
-//            case R.id.tv_activity_main_yunQian:
-//                startActivity(new Intent(this, YunQianActivity.class));
-//                break;
-//            case R.id.tv_activity_main_yunChan:
-//                startActivity(new Intent(this, YunChanActivity.class));
-//                break;
-//            case R.id.tv_activity_main_erTong:
-//                startActivity(new Intent(this, ErTongActivity.class));
-//                break;
-//            case R.id.tv_activity_main_jieZhong:
-//                startActivity(new Intent(this, JieZhongActivity.class));
-//                break;
-//        }
-//
-//    }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

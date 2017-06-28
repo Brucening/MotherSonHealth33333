@@ -7,6 +7,11 @@
     <!--字体-->
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+
+    <!--登录界面背景颜色-->
+    <color name="login_bg">#F29DD1</color>
+    <color name="login_btn_bg">#FF4081</color>
+
     <!--主界面-->
     <color name="activity_main_background">#10000000</color>
     <color name="activity_main_actionbar_background">#FF4081</color>

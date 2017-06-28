@@ -2,18 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.it.xzr.mothersonhealth">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".base.Application"
         android:allowBackup="true"
         android:icon="@mipmap/msh_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
             android:name=".base.BaseActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -116,33 +119,85 @@
         <activity
             android:name=".activity.ertong.YE6SuiActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".activity.ertong.JKShowXinShengErActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow8YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow6YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow6SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow5SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow4SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow3YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow3SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow2SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow2Sui6YueActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".activity.ertong.JKShow1YueActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".activity.ertong.JKShow1SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.JKShow1Sui6YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow1Sui6YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow1SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow1YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow2Sui6YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow2SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow3SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow3YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow4SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow5SuiActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".activity.ertong.YEShow6SuiActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow6YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShow8YueActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".activity.ertong.YEShowXinShengErActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activity.ertong.JKShowXinShengErActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow8YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow6YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow6SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow5SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow4SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow3YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow3SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow2SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow2Sui6YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow1YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow1SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.JKShow1Sui6YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow1Sui6YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow1SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow1YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow2Sui6YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow2SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow3SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow3YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow4SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow5SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow6SuiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow6YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShow8YueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ertong.YEShowXinShengErActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
 
 </manifest>

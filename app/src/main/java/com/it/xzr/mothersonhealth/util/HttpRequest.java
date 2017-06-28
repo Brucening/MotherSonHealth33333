@@ -1,7 +1,12 @@
 package com.it.xzr.mothersonhealth.util;
 
+import android.os.Handler;
+import android.os.Message;
+
 import java.io.IOException;
 
+import okhttp3.Call;
+import okhttp3.Callback;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -26,31 +31,50 @@ public class HttpRequest {
         return httpRequest;
     }
 
-    public String getRequest(String url) throws IOException {
+    public void getRequest(String url, final Handler handler) {
         Request request = new Request.Builder()
                 .url(url)
                 .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
 
-        Response response = client.newCall(request).execute();
-        if (response.isSuccessful()) {
-            return response.body().string();
-        } else {
-           return null;
-        }
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (response.isSuccessful()) {
+                    Message message = handler.obtainMessage();
+                    message.obj = response.body().string();
+                    handler.sendMessage(message);
+                }
+            }
+        });
     }
 
-    public String postRequest(String url, String json) throws IOException {
+    public void postRequest(String url, String json, final Handler handler) {
         RequestBody body = RequestBody.create(JSON, json);
         Request request = new Request.Builder()
                 .url(url)
                 .post(body)
                 .build();
-        Response response = client.newCall(request).execute();
-        if (response.isSuccessful()) {
-            return response.body().string();
-        } else {
-            return null;
-        }
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Message message = handler.obtainMessage();
+                message.obj = e.toString();
+                handler.sendMessage(message);
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (response.isSuccessful()) {
+                    Message message = handler.obtainMessage();
+                    message.obj = response.body().string();
+                    handler.sendMessage(message);
+                }
+            }
+        });
     }
 
 }

@@ -224,11 +224,11 @@ public class YEXinShengErActivity extends BaseActivity {
                     String json = convertToJson();
                     // TODO: 2017/6/27 数据传输网络请求测试
                     String url = "";
-                    try {
-                        String response = HttpRequest.getInstance().postRequest(url, json);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+//                    try {
+//                        String response = HttpRequest.getInstance().postRequest(url, json);
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
                 }
                 break;
         }

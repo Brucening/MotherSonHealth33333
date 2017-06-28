@@ -1,6 +1,7 @@
 package com.it.xzr.mothersonhealth.util;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
@@ -14,23 +15,18 @@ import android.view.View;
 
 public class GridViewDividerItemDecoration extends RecyclerView.ItemDecoration {
 
-//    private static final int[] ATTRS = new int[]{
-//            android.R.attr.listDivider
-//    };
+    private static final int[] ATTRS = new int[]{
+            android.R.attr.listDivider
+    };
 
-    public static final int HORIZONTAL_LIST = LinearLayoutManager.HORIZONTAL;
-
-    public static final int VERTICAL_LIST = LinearLayoutManager.VERTICAL;
 
     private Drawable mDivider;
 
-    private int mOrientation;
 
-    public GridViewDividerItemDecoration(Context context,  int drawableColor) {
-//        final TypedArray a = context.obtainStyledAttributes(ATTRS);
-//        mDivider = a.getDrawable(0);
-//        a.recycle();
-        mDivider = context.getResources().getDrawable(drawableColor);
+    public GridViewDividerItemDecoration(Context context) {
+        final TypedArray a = context.obtainStyledAttributes(ATTRS);
+        mDivider = a.getDrawable(0);
+        a.recycle();
     }
 
     @Override
@@ -62,7 +58,7 @@ public class GridViewDividerItemDecoration extends RecyclerView.ItemDecoration {
     public void drawHorizontal(Canvas c, RecyclerView parent)
     {
         int childCount = parent.getChildCount();
-        for ( int i = 0; i < childCount; i++)
+        for (int i = 0; i < childCount; i++)
         {
             final View child = parent.getChildAt(i);
             final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child
@@ -80,7 +76,7 @@ public class GridViewDividerItemDecoration extends RecyclerView.ItemDecoration {
     public void drawVertical(Canvas c, RecyclerView parent)
     {
         final int childCount = parent.getChildCount();
-        for ( int i = 0; i < childCount; i++)
+        for (int i = 0; i < childCount; i++)
         {
             final View child = parent.getChildAt(i);
 
@@ -102,7 +98,7 @@ public class GridViewDividerItemDecoration extends RecyclerView.ItemDecoration {
         RecyclerView.LayoutManager layoutManager = parent.getLayoutManager();
         if (layoutManager instanceof GridLayoutManager)
         {
-            if ((pos + 1) % spanCount == 0) // 如果是最后一列，则不需要绘制右边
+            if ((pos + 1) % spanCount == 0)// 如果是最后一列，则不需要绘制右边
             {
                 return true;
             }
@@ -110,16 +106,16 @@ public class GridViewDividerItemDecoration extends RecyclerView.ItemDecoration {
         {
             int orientation = ((StaggeredGridLayoutManager) layoutManager)
                     .getOrientation();
-            if (orientation == StaggeredGridLayoutManager.VERTICAL )
+            if (orientation == StaggeredGridLayoutManager.VERTICAL)
             {
-                if ((pos + 1) % spanCount == 0) // 如果是最后一列，则不需要绘制右边
+                if ((pos + 1) % spanCount == 0)// 如果是最后一列，则不需要绘制右边
                 {
                     return true;
                 }
             } else
             {
                 childCount = childCount - childCount % spanCount;
-                if (pos >= childCount) // 如果是最后一列，则不需要绘制右边
+                if (pos >= childCount)// 如果是最后一列，则不需要绘制右边
                     return true;
             }
         }
@@ -133,14 +129,14 @@ public class GridViewDividerItemDecoration extends RecyclerView.ItemDecoration {
         if (layoutManager instanceof GridLayoutManager)
         {
             childCount = childCount - childCount % spanCount;
-            if (pos >= childCount) // 如果是最后一行，则不需要绘制底部
+            if (pos >= childCount)// 如果是最后一行，则不需要绘制底部
                 return true;
         } else if (layoutManager instanceof StaggeredGridLayoutManager)
         {
             int orientation = ((StaggeredGridLayoutManager) layoutManager)
                     .getOrientation();
             // StaggeredGridLayoutManager 且纵向滚动
-            if (orientation == StaggeredGridLayoutManager.VERTICAL )
+            if (orientation == StaggeredGridLayoutManager.VERTICAL)
             {
                 childCount = childCount - childCount % spanCount;
                 // 如果是最后一行，则不需要绘制底部

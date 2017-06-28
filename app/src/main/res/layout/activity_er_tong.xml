@@ -10,7 +10,7 @@
         android:id="@+id/cab_activity_er_tong_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        custom:ActionBarBackground="@color/activity_main_erTong_background"
+        custom:ActionBarBackground="@color/activity_main_actionbar_background"
         custom:ActionBarContent="@string/activity_main_erTong_content"></com.it.xzr.mothersonhealth.view.CustomActionBar>
 
     <FrameLayout

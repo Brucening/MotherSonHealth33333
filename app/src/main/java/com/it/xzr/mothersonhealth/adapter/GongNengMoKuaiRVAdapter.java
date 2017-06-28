@@ -21,10 +21,19 @@ import java.util.List;
 public class GongNengMoKuaiRVAdapter extends RecyclerView.Adapter<GongNengMoKuaiRVAdapter.MyHolder> {
     private Context context;
     private List<GongNengMoKuaiItem> data;
+    private OnClickListner onClickListner;
 
     public GongNengMoKuaiRVAdapter(Context context, List<GongNengMoKuaiItem> data) {
         this.context = context;
         this.data = data;
+    }
+
+    public interface OnClickListner {
+        void onItemClickListner(String name);
+    }
+
+    public void setOnClickListner(OnClickListner onClickListner) {
+        this.onClickListner = onClickListner;
     }
 
     @Override
@@ -33,9 +42,15 @@ public class GongNengMoKuaiRVAdapter extends RecyclerView.Adapter<GongNengMoKuai
     }
 
     @Override
-    public void onBindViewHolder(MyHolder holder, int position) {
-        Picasso.with(context).load(data.get(position).getImgUrl()).into(holder.img);
+    public void onBindViewHolder(MyHolder holder, final int position) {
+        Picasso.with(context).load(data.get(position).getImgUrl()).resize(90,90).into(holder.img);
         holder.text.setText(data.get(position).getName());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickListner.onItemClickListner(data.get(position).getName());
+            }
+        });
     }
 
     @Override
