@@ -1,14 +1,19 @@
 package com.it.xzr.mothersonhealth.activity.yunqian;
 
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.it.xzr.mothersonhealth.R;
 import com.it.xzr.mothersonhealth.base.BaseActivity;
+import com.it.xzr.mothersonhealth.util.SQLiteHelper;
 
 
 /**
@@ -16,6 +21,7 @@ import com.it.xzr.mothersonhealth.base.BaseActivity;
  */
 
 public class JiLuActivity extends BaseActivity {
+    private SQLiteHelper sqLiteHelper;
     private EditText edittext_mother_name,edittext_mother_age,edittext_mother_id,
             edittext_mother_dizhi,edittext_mother_tel,edittext_mother_hunling,
             edittext_mother_yunling,edittext_mother_shengao,edittext_mother_tizhong,
@@ -40,6 +46,7 @@ public class JiLuActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jilu);
+        sqLiteHelper = new SQLiteHelper(this,"text.db",null,2);
         initWidget();
     }
 
@@ -112,6 +119,19 @@ public class JiLuActivity extends BaseActivity {
                 edittext_father_Tizhong=edittext_father_tizhong.getText().toString();
                 edittext_father_Bmi=edittext_father_bmi.getText().toString();
                 edittext_yunqian_jilu_Ganxiang=edittext_yunqian_jilu_ganxiang.getText().toString();
+                SQLiteDatabase db = sqLiteHelper.getWritableDatabase();
+                ContentValues values = new ContentValues();
+                values.put("VXm",edittext_mother_Name);
+                values.put("VZjhm",edittext_mother_Id);
+                values.put("dtCsrq",edittext_mother_Age);
+                values.put("VLxdh",edittext_mother_Tel);
+                values.put("VXzdz",edittext_mother_Dizhi);
+                values.put("VJhhynlMq",edittext_mother_Yunling);
+                values.put("VJhhynlFq",edittext_father_Yunling);
+                values.put("VXm",edittext_mother_Name);
+                db.insert("bybmjl",null,values);
+                values.clear();
+                Toast.makeText(JiLuActivity.this,"保存成功",Toast.LENGTH_SHORT).show();
                 break;
         }
     }
