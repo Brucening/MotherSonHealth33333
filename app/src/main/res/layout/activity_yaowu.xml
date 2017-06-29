@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/activity_main_actionbar_background"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:src="@mipmap/back_word"
+            android:id="@+id/img_yunqian_fanhui"/>
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:text="@string/activity_main_yunQian_yaowu"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--疾病与药物-->
+            <TextView
+                android:id="@+id/actity_main_yunqian_yaowu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/activity_main_yunqian_yaowu"
+                android:paddingLeft="20sp"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/view_yaowu"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/actity_main_yunqian_yaowu"
+                android:background="@color/view_color" />
+            <LinearLayout
+                android:id="@+id/linear_kongzhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_yaowu"
+                android:orientation="horizontal">
+                <!--控制慢性病-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqian_kongzhi"
+                    android:textColor="#000000"
+                    android:paddingLeft="20sp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3.3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_yuedu"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_weight="3.3"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@mipmap/icon_arrow"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_kongzhi"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_kongzhi"
+                android:background="@color/view_color" />
+            <LinearLayout
+                android:id="@+id/linear_jinfang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_kongzhi"
+                android:orientation="horizontal">
+                <!--谨防感染性疾病-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_jinfang"
+                    android:textColor="#000000"
+                    android:paddingLeft="20sp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3.3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_yuedu"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_weight="3.3"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@mipmap/icon_arrow"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_jinfang"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_jinfang"
+                android:background="@color/view_color" />
+            <LinearLayout
+                android:id="@+id/linear_heli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_jinfang"
+                android:orientation="horizontal">
+                <!--合理用药-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20sp"
+                    android:text="@string/activity_main_yunqing_heli"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3.3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_yuedu"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_weight="3.3"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@mipmap/icon_arrow"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_heli"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_heli"
+                android:background="@color/view_color" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

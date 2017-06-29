@@ -20,6 +20,9 @@
     <color name="activity_main_erTong_background">#79B4F2</color>
     <color name="activity_main_jieZhong_background">#589808</color>
 
+    <!--孕前篇-->
+    <color name="view_color">#E8E8E8</color>
+
     <!--儿童篇-->
     <color name="activity_yexin_sheng_er_table_title">#cc79B4F2</color>
     <color name="activity_yexin_sheng_er_table_content_bg2">#5579B4F2</color>

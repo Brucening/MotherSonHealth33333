@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/activity_main_actionbar_background"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:src="@mipmap/back_word"
+            android:id="@+id/img_yunqian_fanhui"/>
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/activity_main_yunQian_tizhong"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!---->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_yesuan_text">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:text="@string/activity_main_yunQian_tizhong"
+                    android:textColor="#A883BA"
+                    android:textSize="35sp"
+                    android:paddingLeft="20sp"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="12dip"
+                android:layout_below="@+id/linear_yesuan_text">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yunqian_jihuan"
+                    android:padding="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:id="@+id/linear_yesuan_biankuang">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yunqina_tizhong_text1"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yunqina_tizhong_text2"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+<!--
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:text="BMI=体重(kg)/身高(m)²"
+                        android:textColor="#A883BA"
+                        android:textSize="25sp"
+                        android:gravity="center_vertical"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BMI 18.5 ~ 24.9 标准体重"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BMI 25.0 ~ 29.9 超重"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*简单计算的体重公式:"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:text="身高(cm)-105=标准体重(kg)"
+                        android:textColor="#A883BA"
+                        android:textSize="25sp"
+                        android:gravity="center_vertical"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45px"
+                    android:layout_below="@+id/linear_jihua_biankuang"></LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

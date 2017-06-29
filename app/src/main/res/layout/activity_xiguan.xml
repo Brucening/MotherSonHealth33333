@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/activity_main_actionbar_background"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:src="@mipmap/back_word"
+            android:id="@+id/img_yunqian_fanhui"/>
+        <!--标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:text="@string/activity_main_yunQian_xiguan"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--养成良好习惯-->
+            <TextView
+                android:id="@+id/actity_main_yunqian_xiguan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/activity_main_yunqian_xiguan"
+                android:paddingLeft="20sp"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/view_xiguan"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/actity_main_yunqian_xiguan"
+                android:background="@color/view_color" />
+            <!---->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/framelayout_jiancha"
+                android:layout_below="@+id/view_xiguan">
+                <LinearLayout
+                    android:id="@+id/linear_jiancha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                    <!--提前做好孕前优先健康检查-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/activity_main_yunqian_jiancha"
+                        android:textColor="#000000"
+                        android:paddingLeft="20sp"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="3.3"
+                        android:gravity="center_vertical"
+                        android:text="@string/activity_main_yunqing_yuedu"
+                        android:textSize="15sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="3.3"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@mipmap/icon_arrow"/>
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/view_jiancha"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/framelayout_jiancha"
+                android:background="@color/view_color" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/framelayout_yesuan"
+                android:layout_below="@+id/view_jiancha">
+                <LinearLayout
+                    android:id="@+id/linear_yesuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--孕前开始吃叶酸-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/activity_main_yunqing_yesuan"
+                        android:textColor="#000000"
+                        android:paddingLeft="20sp"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="3.3"
+                        android:gravity="center_vertical"
+                        android:text="@string/activity_main_yunqing_yuedu"
+                        android:textSize="15sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="3.3"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@mipmap/icon_arrow"/>
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/view_yesuan"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/framelayout_yesuan"
+                android:background="@color/view_color" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/framelayout_fangshi"
+                android:layout_below="@+id/view_yesuan">
+                <LinearLayout
+                    android:id="@+id/linear_fangshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--坚持健康的生活方式-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/activity_main_yunqing_fangshi"
+                        android:textColor="#000000"
+                        android:paddingLeft="20sp"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="3.3"
+                        android:gravity="center_vertical"
+                        android:text="@string/activity_main_yunqing_yuedu"
+                        android:textSize="15sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_weight="3.3"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@mipmap/icon_arrow"/>
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/view_fangshi"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/framelayout_fangshi"
+                android:background="@color/view_color" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/activity_main_actionbar_background"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <!--备孕爸妈自我记录-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/activity_main_yunQian_jilu"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--备孕妈妈基本情况-->
+            <TextView
+                android:id="@+id/actity_main_yunqian_mother_qingkuang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/activity_main_yunQian_mother_qingkuang"
+                android:paddingLeft="20sp"
+                android:textColor="#872657"
+                android:textSize="19sp" />
+            <TextView
+                android:id="@+id/view_mother_qingkuang"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/actity_main_yunqian_mother_qingkuang"
+                android:background="#872657" />
+            <!---->
+
+            <!---->
+
+
+            <LinearLayout
+                android:id="@+id/linear_mother_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_qingkuang"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--母亲姓名-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_mother_name"
+
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_name"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view_mother_name"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_name"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_mother_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_name"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--母亲年龄-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_age"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_age"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_age"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_mother_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_mother_age"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--母亲身份证号-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_id"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_id"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/view_mother_id"
+                android:layout_below="@+id/linear_mother_id"
+                android:background="@color/view_color" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_mother_dizhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_id"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--母亲家庭住址-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_dizhi"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_dizhi"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/view_mother_dizhi"
+                android:layout_below="@+id/linear_mother_dizhi"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_mother_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_dizhi"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--母亲电话-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_tel"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_tel"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/view_mother_tel"
+                android:layout_below="@+id/linear_mother_tel"
+                android:background="@color/view_color" />
+
+
+
+
+
+            <!---->
+
+            <!---->
+            <LinearLayout
+                android:id="@+id/linear_mother_hunling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_tel"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--结婚年龄-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqian_hunling"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_hunling"
+                    android:background="@null"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/activity_main_yunqing_sui"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_mother_hunling"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_hunling"
+                android:background="@color/view_color" />
+            <LinearLayout
+                android:id="@+id/linear_mother_yunling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_hunling"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--计划怀孕年龄-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_yunling"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_yunling"
+                    android:background="@null"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/activity_main_yunqing_sui"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_mother_yunling"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_yunling"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_mother_shengao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_yunling"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--身高-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_shengao"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_shengao"
+                    android:background="@null"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/activity_main_yunqing_cm"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_mother_shengao"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_shengao"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_mother_tizhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_shengao"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--体重-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_zhongliang"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_tizhong"
+                    android:background="@null"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/activity_main_yunqing_kg"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_mother_tizhong"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_tizhong"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_mother_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_tizhong"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--BMI-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_bmi"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_mother_bmi"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_mother_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_bmi"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_mother_shencai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_bmi"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--身材:-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_shencai"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/checkbox_mother_zhengchang"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_zhengchang"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/checkbox_mother_chaozhong"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_chaozhong"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/checkbox_mother_feipang"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_feipang"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/checkbox_mother_chaoqing"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_chaoqing"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_mother_shencai"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_shencai"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_mother_jieguo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_mother_shencai"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--备孕检查结果-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_jieguo"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:id="@+id/radiobutton_mother_jieguo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_jian"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:id="@+id/radiobutton_mother_jibing"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_jibing"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_mother_jieguo"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_mother_jieguo"
+                android:background="@color/view_color" />
+
+
+
+        <!---->
+        <!--备孕爸爸基本情况-->
+
+
+            <!--备孕爸爸基本情况-->
+            <TextView
+                android:id="@+id/actity_main_yunqian_father_qingkuang"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/view_mother_jieguo"
+                android:paddingLeft="20sp"
+                android:text="@string/activity_main_yunQian_father_qingkuang"
+                android:textColor="#ED9121"
+                android:textSize="19sp" />
+            <TextView
+                android:id="@+id/view_father_qingkuang"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/actity_main_yunqian_father_qingkuang"
+                android:background="#ED9121" />
+
+            <!---->
+
+            <!---->
+
+
+            <LinearLayout
+                android:id="@+id/linear_father_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_qingkuang"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--父亲姓名-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_father_name"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_name"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view_father_name"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_name"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_name"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--父亲年龄-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_age"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_age"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_age"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_father_age"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--父亲身份证号-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_id"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_id"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/view_father_id"
+                android:layout_below="@+id/linear_father_id"
+                android:background="@color/view_color" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_father_dizhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_id"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--父亲家庭住址-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_dizhi"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_dizhi"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/view_father_dizhi"
+                android:layout_below="@+id/linear_father_dizhi"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_dizhi"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--父亲电话-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_tel"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_tel"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/view_father_tel"
+                android:layout_below="@+id/linear_father_tel"
+                android:background="@color/view_color" />
+
+
+
+
+
+            <!---->
+
+            <!---->
+
+            <LinearLayout
+                android:id="@+id/linear_father_hunling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_tel"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--结婚年龄-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqian_hunling"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_hunling"
+                    android:background="@null"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/activity_main_yunqing_sui"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_father_hunling"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_hunling"
+                android:background="@color/view_color" />
+            <LinearLayout
+                android:id="@+id/linear_father_yunling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_hunling"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--计划怀孕年龄-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_yunling"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_yunling"
+                    android:background="@null"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/activity_main_yunqing_sui"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_father_yunling"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_yunling"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_shengao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_yunling"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--身高-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_shengao"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_shengao"
+                    android:background="@null"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/activity_main_yunqing_cm"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_father_shengao"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_shengao"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_tizhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_shengao"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--体重-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_zhongliang"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_tizhong"
+                    android:background="@null"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/activity_main_yunqing_kg"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_father_tizhong"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_tizhong"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_tizhong"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--BMI-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_bmi"
+                    android:textSize="15sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/edittext_father_bmi"
+                    android:background="@null"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_father_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_bmi"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_shencai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_bmi"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--身材:-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_shencai"
+                    android:textSize="15sp" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/checkbox_father_zhengchang"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_zhengchang"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/checkbox_father_chaozhong"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_chaozhong"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/checkbox_father_feipang"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_feipang"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/checkbox_father_chaoqing"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_chaoqing"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_father_shencai"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_shencai"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:id="@+id/linear_father_jieguo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_father_shencai"
+                android:paddingLeft="20sp"
+                android:orientation="horizontal">
+                <!--备孕检查结果-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_jieguo"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:id="@+id/radiobutton_father_jieguo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_jian"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:id="@+id/radiobutton_father_jibing"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_main_yunqing_jibing"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/view_father_jieguo"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linear_father_jieguo"
+                android:background="@color/view_color" />
+
+            <TextView
+                android:id="@+id/actity_main_yunqian_qingkuang_ganxiang"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@+id/view_father_jieguo"
+                android:text="@string/activity_main_yunQian_qingkuang_ganxiang"
+                android:textColor="#872657"
+                android:textSize="19sp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="96dip"
+                android:layout_below="@+id/actity_main_yunqian_qingkuang_ganxiang"
+                android:background="@drawable/bg_edittext"
+                android:padding="5dip"
+                android:layout_margin="36dip"
+                android:textColorHint="#AAAAAA"
+                android:textSize="15dip"
+                android:singleLine="true"
+                android:hint="请输入..."
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:id="@+id/edittext_yunqian_jilu_ganxiang"
+                />
+            <Button
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext_yunqian_jilu_ganxiang"
+                android:text="提交"
+                android:layout_margin="36dip"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/yunqian_mother_xinxi"
+                android:id="@+id/but_yunqian_jilu_beiyun_tijiao"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
